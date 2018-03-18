@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // THIS IS A STATELESS FUNCTIONAL COMPONENT
 // you use it when you just pass data to it
@@ -19,6 +20,10 @@ const Header = props => (
     </h3>
   </header>
 )
+
+Header.propTypes = {
+  tagline: PropTypes.string.isRequired
+}
 
 // THIS IS A REGULAR COMPONENT 
 
